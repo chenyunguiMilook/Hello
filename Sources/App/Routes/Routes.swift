@@ -5,6 +5,7 @@ extension Droplet {
         get("hello") { req in
             var json = JSON()
             try json.set("hello", "world")
+            try json.set("author", "kevin")
             return json
         }
 
